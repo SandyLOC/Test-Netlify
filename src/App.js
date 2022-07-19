@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import User from "./yo.jpg"
+import User from "./yo.jpg";
+import Greet from './Components/Greet';
 
 function App() {
 
@@ -38,6 +39,10 @@ function App() {
           <br/>
           Vivo en {direccion.calle}, {direccion.pais}
         </a>
+        <Greet name="Yanni" home="San Antonio Texas" styles="red">
+          <p>I'm the children of the Greet component</p>
+        </Greet>
+        <Greet name="Moy" home="CDMX" styles="orange"/>
       </header>
     </div>
   );
